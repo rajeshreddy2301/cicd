@@ -4,11 +4,11 @@
 	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
-	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="96ba1321-dd38-458c-a0dd-186b0111308a" >
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="848ac654-8a6d-4136-bc3b-4e0157ba268c" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
-	<flow name="git-pocFlow" doc:id="29e671e6-2206-47f3-85dc-5fa63ed426b8" >
-		<http:listener doc:name="Listener" doc:id="94ac3808-8077-4609-b59c-5edb286d841b" config-ref="HTTP_Listener_config" path="/test"/>
-		<logger level="INFO" doc:name="Logger" doc:id="bd409b61-fd36-4821-8ccc-bc5169090c76" message="first logger"/>
+	<flow name="git-pocFlow" doc:id="91bea81d-8673-49e5-b3e3-78e479ec4fb4" >
+		<http:listener doc:name="Listener" doc:id="21478041-6f6b-4766-8a64-7b85f3f1ae91" config-ref="HTTP_Listener_config" path="/test"/>
+		<logger level="INFO" doc:name="Logger" doc:id="bc5dfd78-9e69-451e-a8e5-f1e6fae94e8d" message="logger"/>
 	</flow>
 </mule>
